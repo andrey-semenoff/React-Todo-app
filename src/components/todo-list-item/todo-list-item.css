@@ -1,0 +1,17 @@
+.list-group-item:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.list-item-buttons {
+  min-width: 40px;
+}
+
+.done .todo-list-item__label {
+  text-decoration: line-through;
+}
+
+.important .todo-list-item__label {
+  color: steelblue;
+  font-weight: bold;
+}
