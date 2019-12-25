@@ -23,7 +23,6 @@ export default class App extends Component {
     }
   };
 
-
   createNewLabel(text) {
     return {
       text,
@@ -124,7 +123,7 @@ export default class App extends Component {
     this.setState({
       filters: {
         keyword: '',
-        is_done: null
+        is_done: 'all',
       }
     });
   };

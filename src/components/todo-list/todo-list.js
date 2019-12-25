@@ -21,9 +21,11 @@ const TodoList = ({ labels, onMarkDone, onMarkImportant, onDelete }) => {
   return (
       <div className="row mt-3 todo-list">
         <div className="col">
-          <ul className="list-group">
-            { listItems }
-          </ul>
+            { listItems.length ? (
+              <ul className="list-group">{ listItems }</ul>
+              ) : (
+              <div>No items found by selected filters!</div>
+            )}
         </div>
       </div>
   );
